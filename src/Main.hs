@@ -1,4 +1,4 @@
-module Main (main) where
+module Main where
 
 import Drawing
 import Logic
@@ -9,10 +9,7 @@ import Graphics.Gloss
 main :: IO ()
 main =
   play
-    (InWindow
-      "Snake"
-      (floor windowSize, floor windowSize)
-      (100, 100))
+    (InWindow "Snake" (floor windowSize, floor windowSize) (100, 100))
     white
     3
     initialState
